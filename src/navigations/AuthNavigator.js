@@ -7,7 +7,7 @@ import Register from '../screens/Register';
 const AuthNavigator = () => {
   const AuthStack = createNativeStackNavigator();
   return (
-    <AuthStack.Navigator>
+    <AuthStack.Navigator screenOptions={{headerShown: false}}>
       <AuthStack.Screen name={SIGN_IN} component={SignIn} />
       <AuthStack.Screen name={REGISTER} component={Register} />
     </AuthStack.Navigator>

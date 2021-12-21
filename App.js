@@ -9,12 +9,15 @@
 import React from 'react';
 import GlobalProvider from './src/context/Provider';
 import AppNavContainer from './src/navigations';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 const App = () => {
   return (
-    <GlobalProvider>
-      <AppNavContainer />
-    </GlobalProvider>
+    <SafeAreaProvider>
+      <GlobalProvider>
+        <AppNavContainer />
+      </GlobalProvider>
+    </SafeAreaProvider>
   );
 };
 

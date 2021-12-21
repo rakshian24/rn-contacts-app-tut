@@ -37,6 +37,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = contacts/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = contacts/main.m; sourceTree = "<group>"; };
 		18AFF3253DAA6B0A09355044 /* Pods-contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contacts.debug.xcconfig"; path = "Target Support Files/Pods-contacts/Pods-contacts.debug.xcconfig"; sourceTree = "<group>"; };
+		2BA416F4277213FD00A9D199 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = ../../android/app/src/main/assets/fonts/FontAwesome.ttf; sourceTree = "<group>"; };
+		2BA416F5277213FD00A9D199 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = ../../android/app/src/main/assets/fonts/Ionicons.ttf; sourceTree = "<group>"; };
+		2BA416F6277213FD00A9D199 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = ../../android/app/src/main/assets/fonts/Feather.ttf; sourceTree = "<group>"; };
+		2BA416F7277213FD00A9D199 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = ../../android/app/src/main/assets/fonts/AntDesign.ttf; sourceTree = "<group>"; };
+		2BA416F8277213FE00A9D199 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = ../../android/app/src/main/assets/fonts/FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		2BA416F9277213FE00A9D199 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = ../../android/app/src/main/assets/fonts/Zocial.ttf; sourceTree = "<group>"; };
+		2BA416FA277213FE00A9D199 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = ../../android/app/src/main/assets/fonts/Octicons.ttf; sourceTree = "<group>"; };
+		2BA416FB277213FF00A9D199 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = ../../android/app/src/main/assets/fonts/SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		2BA416FC277213FF00A9D199 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = ../../android/app/src/main/assets/fonts/FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		2BA416FD277213FF00A9D199 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = ../../android/app/src/main/assets/fonts/Entypo.ttf; sourceTree = "<group>"; };
+		2BA416FE2772140000A9D199 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = ../../android/app/src/main/assets/fonts/Foundation.ttf; sourceTree = "<group>"; };
+		2BA416FF2772140000A9D199 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = ../../android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		2BA417002772140000A9D199 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = ../../android/app/src/main/assets/fonts/FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		2BA417012772140100A9D199 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = ../../android/app/src/main/assets/fonts/EvilIcons.ttf; sourceTree = "<group>"; };
+		2BA417022772140100A9D199 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = ../../android/app/src/main/assets/fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
+		2BA417032772140100A9D199 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = ../../android/app/src/main/assets/fonts/Fontisto.ttf; sourceTree = "<group>"; };
 		614624B8052AC33E01C5306B /* libPods-contacts-contactsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-contacts-contactsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = contacts/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3FA47FF0C7E68144812521 /* Pods-contacts-contactsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contacts-contactsTests.debug.xcconfig"; path = "Target Support Files/Pods-contacts-contactsTests/Pods-contacts-contactsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +112,29 @@
 			name = contacts;
 			sourceTree = "<group>";
 		};
+		2BA416F32772135900A9D199 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2BA416F7277213FD00A9D199 /* AntDesign.ttf */,
+				2BA416FD277213FF00A9D199 /* Entypo.ttf */,
+				2BA417012772140100A9D199 /* EvilIcons.ttf */,
+				2BA416F6277213FD00A9D199 /* Feather.ttf */,
+				2BA416F4277213FD00A9D199 /* FontAwesome.ttf */,
+				2BA416FC277213FF00A9D199 /* FontAwesome5_Brands.ttf */,
+				2BA416F8277213FE00A9D199 /* FontAwesome5_Regular.ttf */,
+				2BA417002772140000A9D199 /* FontAwesome5_Solid.ttf */,
+				2BA417032772140100A9D199 /* Fontisto.ttf */,
+				2BA416FE2772140000A9D199 /* Foundation.ttf */,
+				2BA416F5277213FD00A9D199 /* Ionicons.ttf */,
+				2BA416FF2772140000A9D199 /* MaterialCommunityIcons.ttf */,
+				2BA417022772140100A9D199 /* MaterialIcons.ttf */,
+				2BA416FA277213FE00A9D199 /* Octicons.ttf */,
+				2BA416FB277213FF00A9D199 /* SimpleLineIcons.ttf */,
+				2BA416F9277213FE00A9D199 /* Zocial.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +153,6 @@
 				9C3FA47FF0C7E68144812521 /* Pods-contacts-contactsTests.debug.xcconfig */,
 				E4653F150A0ED430D8266EDF /* Pods-contacts-contactsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +166,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				2BA416F32772135900A9D199 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* contacts */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* contactsTests */,
