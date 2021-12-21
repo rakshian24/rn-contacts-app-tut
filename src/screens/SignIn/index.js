@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Container from '../../components/common/Container';
 import Input from '../../components/common/Input';
 import {Icon} from 'react-native-elements';
+import CustomButton from '../../components/common/CustomButton';
 
 const SignIn = () => {
   const [userName, setUserName] = useState('');
@@ -33,6 +34,7 @@ const SignIn = () => {
         iconPosition="right"
         secureTextEntry={hide}
       />
+      <CustomButton title="Login" primary loading={true} />
     </Container>
   );
 };
