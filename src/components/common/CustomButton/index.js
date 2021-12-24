@@ -12,6 +12,7 @@ const CustomButton = ({
   success,
   disabled,
   loading,
+  ...props
 }) => {
   const getCustomButtonColor = () => {
     if (disabled) {
@@ -36,7 +37,8 @@ const CustomButton = ({
   return (
     <TouchableOpacity
       disabled={disabled}
-      style={[styles.customButton, {backgroundColor: getCustomButtonColor()}]}>
+      style={[styles.customButton, {backgroundColor: getCustomButtonColor()}]}
+      {...props}>
       <View style={styles.loadingSection}>
         {loading && <ActivityIndicator style={{paddingRight: 5}} />}
         {title && (

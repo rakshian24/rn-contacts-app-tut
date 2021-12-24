@@ -2,13 +2,13 @@ import React from 'react';
 import {Image, View, Text, TouchableOpacity} from 'react-native';
 import Container from '../common/Container';
 import Input from '../common/Input';
-import {Icon} from 'react-native-elements';
 import CustomButton from '../common/CustomButton';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
-import {REGISTER} from '../../constants/routeNames';
+import {SIGN_IN} from '../../constants/routeNames';
+import {Icon} from 'react-native-elements';
 
-const Login = ({errors, hide, toggleHide, onChange, onSubmit}) => {
+const Register = ({error, onChange, onSubmit, hide, toggleHide}) => {
   const {navigate} = useNavigation();
   return (
     <Container>
@@ -17,13 +17,30 @@ const Login = ({errors, hide, toggleHide, onChange, onSubmit}) => {
         style={styles.logo}
       />
       <View>
-        <Text style={styles.title}>Welcome to Contacts</Text>
-        <Text style={styles.subtitle}>Please login here</Text>
+        <Text style={styles.title}>Create your account</Text>
         <View style={styles.form}>
           <Input
             label="Username"
             handleOnChangeText={value => onChange({name: 'userName', value})}
-            error={errors.userName}
+            error={error.userName}
+          />
+
+          <Input
+            label="First name"
+            handleOnChangeText={value => onChange({name: 'firstName', value})}
+            error={error.firstName}
+          />
+
+          <Input
+            label="Last name"
+            handleOnChangeText={value => onChange({name: 'lastName', value})}
+            error={error.lastName}
+          />
+
+          <Input
+            label="Email"
+            handleOnChangeText={value => onChange({name: 'email', value})}
+            error={error.email}
           />
 
           <Input
@@ -38,19 +55,19 @@ const Login = ({errors, hide, toggleHide, onChange, onSubmit}) => {
             }
             iconPosition="right"
             secureTextEntry={hide}
-            error={errors.password}
+            error={error.password}
           />
-          <CustomButton title="Login" primary onPress={onSubmit} />
+          <CustomButton title="Register" primary onPress={onSubmit} />
         </View>
       </View>
       <View style={styles.footer}>
-        <Text style={styles.footerText}>New to Contacts?</Text>
-        <TouchableOpacity onPress={() => navigate(REGISTER)}>
-          <Text style={styles.linkText}>Register here</Text>
+        <Text style={styles.footerText}>Already have an account?</Text>
+        <TouchableOpacity onPress={() => navigate(SIGN_IN)}>
+          <Text style={styles.linkText}>Login here</Text>
         </TouchableOpacity>
       </View>
     </Container>
   );
 };
 
-export default Login;
+export default Register;
