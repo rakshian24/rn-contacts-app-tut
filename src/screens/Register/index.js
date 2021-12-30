@@ -11,92 +11,101 @@ const Register = () => {
   const onChange = ({name, value}) => {
     setForm({...form, [name]: value});
     if (value !== '') {
-      // Password Validation
+      //Password Validation
       if (name === 'password') {
         if (value.length < 6) {
           setError(prev => {
             return {
               ...prev,
-              password: 'Password should be minimum 6 characters',
+              [name]: 'Password should be min 6 characters',
             };
           });
         } else {
           setError(prev => {
-            return {...prev, password: null};
+            return {
+              ...prev,
+              [name]: null,
+            };
           });
         }
       }
-
-      // User Name Validation
-      if (name === 'userName') {
+      //Username Validation
+      else if (name === 'userName') {
         if (value.length < 3) {
           setError(prev => {
             return {
               ...prev,
-              userName: 'User Name should be minimum 3 characters',
+              [name]: 'Username should be min 3 characters',
             };
           });
-        } else if (value.length > 30) {
+        } else if (value.length > 28) {
           setError(prev => {
             return {
               ...prev,
-              userName: 'User Name is too long',
+              [name]: 'Username is too long',
             };
           });
         } else {
           setError(prev => {
-            return {...prev, userName: null};
+            return {
+              ...prev,
+              [name]: null,
+            };
           });
         }
       }
-
-      // First Name Validation
-      if (name === 'firstName') {
+      //First Name Validation
+      else if (name === 'firstName') {
         if (value.length < 3) {
           setError(prev => {
             return {
               ...prev,
-              firstName: 'First Name should be minimum 3 characters',
+              [name]: 'First name should be min 3 characters',
             };
           });
-        } else if (value.length > 30) {
+        } else if (value.length > 28) {
           setError(prev => {
             return {
               ...prev,
-              firstName: 'First Name is too long',
+              [name]: 'First name is too long',
             };
           });
         } else {
           setError(prev => {
-            return {...prev, firstName: null};
+            return {
+              ...prev,
+              [name]: null,
+            };
           });
         }
       }
-
-      // Last Name Validation
-      if (name === 'lastName') {
+      //Last Name Validation
+      else if (name === 'lastName') {
         if (value.length < 3) {
           setError(prev => {
             return {
               ...prev,
-              lastName: 'Last Name should be minimum 3 characters',
+              [name]: 'Last name should be min 3 characters',
             };
           });
-        } else if (value.length > 30) {
+        } else if (value.length > 28) {
           setError(prev => {
             return {
               ...prev,
-              lastName: 'Last Name is too long',
+              [name]: 'Last name is too long',
             };
           });
         } else {
           setError(prev => {
-            return {...prev, lastName: null};
+            return {
+              ...prev,
+              [name]: null,
+            };
           });
         }
       }
       // Email Validation
-      if (name === 'email') {
+      else if (name === 'email') {
         if (!validateEmail(value)) {
           setError(prev => {
             return {
@@ -111,7 +120,10 @@ const Register = () => {
         }
       } else {
         setError(prev => {
-          return {...prev, [name]: null};
+          return {
+            ...prev,
+            [name]: null,
+          };
         });
       }
     } else {
